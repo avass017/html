@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(operators)
+        {
+            let x=Number(document.getElementById('num1').value)
+            let y=Number(document.getElementById('num2').value)
+            
+        
+        
+        let output;
+        switch(operators)
+        {
+        
+            case "+":output=x+y;
+            break;
+            case "*":output=x*y;
+            break;
+            case "/":output=x/y;
+            break;
+            case "-":output=x-y;
+            break;
+        }  
+        document.writeln("output"+output);
+        
+    }
+    </script>
+</head>
+<body>
+    <p>enter first number</p>
+    <input type="text" id="num1">
+    <p>enter second number</p>
+    <input type="text" id="num2">
+    <br><br>
+    <button onclick="check('+')">+</button>
+    <button onclick="check('*')">*</button>
+    <button onclick="check('/')">/</button>
+    <button onclick="check('-')">-</button>
+    
+</body>
+</html>
