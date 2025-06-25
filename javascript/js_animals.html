@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class animals{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            display(){
+                return`name:<br>${this.name},age:<br>${this.age}`;
+            }
+        }
+        class dog extends animals{
+            constructor(bread,name,age){
+                super(name,age);
+                this.breed=breed;
+            }
+            getinfo(){
+                return`breed:<br>${this.breed},name:<br>${this.name},age:<br>${this.age}`;
+            }
+        }
+        let A=new animals("cat",5);
+        document.writeln(A.display());
+        let D=new dog("pug","viki",3);
+        document.writeln(D.getinfo());
+        document.writeln(D.display());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

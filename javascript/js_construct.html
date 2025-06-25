@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class animals{
+            constructor(name,color)
+            {
+                this.name=name;
+                this.color=color;
+            }
+            display()
+            {
+        //    return(`name:<br>${this.name}`);
+            // document.writeln(`color:<br>${this.color}`);
+            return`Name:${this.name}<br>color:${this.color}`;
+
+            }
+        }
+        let A=new animals("dog","black");
+        let A1=new animals("cat","brown");
+        document.writeln(A.display());
+        document.writeln(A1.display());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

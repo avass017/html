@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function validate(){
+        let username=document.getElementById('name').value;
+        let password=document.getElementById('pass').value;
+
+    
+    if(usrename.trim()===''|| password.trim()==='')
+    {
+        alert("user name or password error");
+        return;
+    }
+    alert("Login successfully!");
+}
+
+    </script>
+</head>
+<body>
+    <label>usrename</label>
+    <input type="text" id="name"><br>
+    <label>password</label>
+    <input type="text" id="pass">
+    <br>
+    <button onclick="validate();">Login</button><br>
+    <p>new register?</p>
+    <a href="register.html"></a>
+</body>
+</html>
